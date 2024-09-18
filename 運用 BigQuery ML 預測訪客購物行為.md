@@ -23,9 +23,13 @@ SQL 或 BigQuery 的基本知識
 
 1. 在專案中建立新資料集：在「Explorer」部分點選專案 ID 旁的三點圖示，按一下「建立資料集」。
 「建立資料集」對話方塊會隨即開啟。
+  ![圖片](https://github.com/user-attachments/assets/7b393466-79c6-4e33-b806-11548ba03a0c)
 
-2. 在「資料集 ID」輸入 bqml_lab，點選「建立資料集」(接受其他預設值)。
 
+3. 在「資料集 ID」輸入 bqml_lab，點選「建立資料集」(接受其他預設值)。
+![圖片](https://github.com/user-attachments/assets/a9a6cc5e-6c6a-4d1d-ad6e-f16319c514e4)
+
+![圖片](https://github.com/user-attachments/assets/74015dd9-4fce-449b-958d-5222ddfd1c1a)
 
 
 
@@ -54,11 +58,15 @@ WHERE
 LIMIT 10000;
 ```
 
+![圖片](https://github.com/user-attachments/assets/33befa72-2cb6-45d7-872f-55987070c3b5)
+
+
 資料表有許多欄，但我們只需其中幾欄來建立 ML 模型。這裡使用下列條件判斷訪客是否會完成交易：訪客裝置使用的作業系統、該裝置是否為行動裝置、訪客的國家/地區，以及網頁瀏覽次數。在本例中，label 是您調整或預測的依據。
 
 這些資料會成為您所建立 ML 模型的訓練資料，且僅限從 2016 年 8 月 1 日到 2017 年 6 月 31 日收集的資料，以保留最後一個月的資料來用於「預測」。為了節省時間，進一步將資料點限制為 10,000 個。
 
 接著將資料儲存為訓練資料。點選「儲存」，從下拉式選單選取「儲存檢視表」，將這個查詢儲存為 view。在彈出式視窗中，「資料集」選取 bqml_lab，「資料表名稱」輸入 training_data，然後點選「儲存」。
+
 
 
 ### 工作 3：建立模型
